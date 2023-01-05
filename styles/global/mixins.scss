@@ -1,0 +1,15 @@
+@mixin text($size: 18px, $line: 27px) {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: $size;
+  line-height: $line;
+  letter-spacing: 0.36px;
+  color: $dark-grey;
+}
+
+@mixin center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

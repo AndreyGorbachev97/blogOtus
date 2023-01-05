@@ -1,0 +1,31 @@
+.main {
+  height: 820px;
+  background: url(../assets/images/bg_shape1.svg) no-repeat;
+  background-size: 100%;
+}
+
+.home {
+  padding: 0 24px;
+  height: 100%;
+  @include center();
+
+  &__info {
+    width: 600px;
+  }
+  &__head {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+
+    letter-spacing: 1.8px;
+    color: #08090a;
+
+    margin-bottom: 28px;
+  }
+  &__desc {
+    @include text(18px, 24px);
+    margin-bottom: 54px;
+  }
+}

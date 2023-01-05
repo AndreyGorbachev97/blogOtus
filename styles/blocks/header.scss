@@ -1,0 +1,47 @@
+header {
+}
+
+.header-up {
+  display: flex;
+  justify-content: center;
+  font-family: "InterLight";
+  padding: 14px;
+  background-color: $primary;
+  color: $white;
+  // @include text();
+}
+
+.header-down {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $white;
+  &__box {
+    padding: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__nav {
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__nav-btn {
+    padding: 16px;
+    font-family: "Inter";
+    text-decoration: none;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $dark;
+
+    &:last-of-type {
+      margin-right: 16px;
+    }
+  }
+}
