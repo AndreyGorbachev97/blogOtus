@@ -19,6 +19,21 @@
   @include center();
 
   transition: all 0.2s ease-out;
+
+  &_outline {
+    background-color: transparent;
+    border: 1px solid rgba(97, 114, 131, 0.2);
+    color: $dark;
+  }
+
+  &_dark {
+    color: $dark;
+  }
+
+  &_fixed-width {
+    width: 132px;
+  }
+
   &:hover {
     background-color: $primary-hover;
   }
@@ -27,4 +42,11 @@
     background-color: $primary-active;
     filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.25));
   }
+}
+
+.btn_outline:hover {
+  background-color: rgba(97, 114, 131, 0.1);
+}
+.btn_outline:active {
+  background-color: rgba(97, 114, 131, 0.15);
 }
