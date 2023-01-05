@@ -60,8 +60,8 @@ module.exports = (env) => ({
       template: 'src/pages/order.html',
     }),
     new HtmlWebpackPlugin({
-      filename: 'feedback.html',
-      template: 'src/pages/feedback.html',
+      filename: 'contact.html',
+      template: 'src/pages/contact.html',
     }),
     new HtmlWebpackPlugin({
       filename: 'menu.html',

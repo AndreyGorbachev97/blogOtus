@@ -1,0 +1,31 @@
+.contact {
+  height: 820px;
+  background: url(../assets/images/bg_shape_contact.svg) no-repeat;
+  background-size: 100%;
+
+  &__main {
+    @include center();
+    height: 100%;
+  }
+
+  &__head {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 55px;
+    letter-spacing: 1.65px;
+    margin-bottom: 28px;
+    color: $primary;
+  }
+
+  &__desc {
+    @include text(18px, 27px);
+    margin-bottom: 48px;
+  }
+
+  // &__info {
+  //   display: flex;
+  //   fl
+  // }
+}
