@@ -60,12 +60,12 @@ module.exports = (env) => ({
       template: 'src/pages/order.html',
     }),
     new HtmlWebpackPlugin({
-      filename: 'feedback.html',
-      template: 'src/pages/feedback.html',
+      filename: 'contact.html',
+      template: 'src/pages/contact.html',
     }),
     new HtmlWebpackPlugin({
-      filename: 'items.html',
-      template: 'src/pages/items.html',
+      filename: 'menu.html',
+      template: 'src/pages/menu.html',
     }),
     new MiniCssExtractPlugin()
   ],

@@ -16,3 +16,14 @@ body {
 p {
   padding: 0 8px;
 }
+
+li {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.mr {
+  &_8 {
+    margin-right: 8px;
+  }
+}
