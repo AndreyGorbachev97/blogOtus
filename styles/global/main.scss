@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  padding: 0 8px;
+}
+
+li {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.mr {
+  &_8 {
+    margin-right: 8px;
+  }
+}
