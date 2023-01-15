@@ -1,26 +1,22 @@
 import "../styles/style.scss";
 
-const el = document.querySelector(".carousel");
 
 let offset = 0
-const changeLeft = (el, fullWidth, widthImg) => {
-  return () => {
-    offset = offset - widthImg;
-    if (offset < 0) {
-      offset = fullWidth;
-    }
-    el.style.left = -offset + 'px';
+const changeLeft = (el, fullWidth, widthImg) => () => {
+  offset -= widthImg;
+  if (offset < 0) {
+    offset = fullWidth;
   }
+  el.style.left = `-${offset}px`;
 }
 
-const changeRight = (el, fullWidth, widthImg) => {
-  return () => {
-    offset = offset + widthImg;
-    if (offset > fullWidth) {
-      offset = 0;
-    }
-    el.style.left = -offset + 'px';
+
+const changeRight = (el, fullWidth, widthImg) => () => {
+  offset += widthImg;
+  if (offset > fullWidth) {
+    offset = 0;
   }
+  el.style.left = `-${offset}px`;
 }
 
 export const carousel = (el, widthImg) => {
@@ -42,9 +38,9 @@ export const carousel = (el, widthImg) => {
     const carouselLine = document.querySelector(".carousel-line")
 
     if (images[0]) {
-      const offset = widthImg * (images.length - 1)
-      const onClickLeft = changeLeft(carouselLine, offset, widthImg)
-      const onClickRight = changeRight(carouselLine, offset, widthImg)
+      const widthContainer = widthImg * (images.length - 1)
+      const onClickLeft = changeLeft(carouselLine, widthContainer, widthImg)
+      const onClickRight = changeRight(carouselLine, widthContainer, widthImg)
 
       btnLeft.addEventListener("click", onClickLeft)
       btnRight.addEventListener("click", onClickRight)
@@ -55,4 +51,5 @@ export const carousel = (el, widthImg) => {
   }
 }
 
-carousel(el, 800)
+const carouselElement = document.querySelector(".carousel");
+carousel(carouselElement, 800)

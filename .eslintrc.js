@@ -11,6 +11,7 @@ module.exports = {
   },
   plugins: ["jest"],
   rules: {
+    "no-param-reassign": 0,
     "import/prefer-default-export": "off",
     "max-len": [
       "error",
