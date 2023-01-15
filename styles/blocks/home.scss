@@ -1,5 +1,5 @@
 .main {
-  height: 820px;
+  min-height: 820px;
   background: url(../assets/images/bg_shape1.svg) no-repeat;
   background-size: 100%;
 }
@@ -8,6 +8,7 @@
   padding: 0 24px;
   height: 100%;
   @include center();
+  margin-bottom: 46px;
 
   &__info {
     width: 600px;
